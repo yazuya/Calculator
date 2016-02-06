@@ -40,14 +40,13 @@ class ViewController: UIViewController {
         label.text = "0"
         
         operation = 1
-        number2 = number
+        number2 = number + number2
         number = 0
     }
     
     @IBAction func equal(){
         if operation == 1{
             label.text = String(number + number2)
-            
         }
     }
     
@@ -56,6 +55,7 @@ class ViewController: UIViewController {
         number2 = 0
         
         label.text = "0"
+        
     }
 
 
