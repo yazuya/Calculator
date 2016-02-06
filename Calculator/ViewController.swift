@@ -26,6 +26,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func select1(){
+        number = number*10 + 1
+        label.text = String(number)
+    }
+    
+    @IBAction func select2(){
+        number = number*10 + 2
+        label.text = String(number)
+    }
+    
     @IBAction func select3(){
         number = number*10 + 3
         label.text = String(number)
@@ -33,6 +43,36 @@ class ViewController: UIViewController {
     
     @IBAction func select4(){
         number = number*10 + 4
+        label.text = String(number)
+    }
+    
+    @IBAction func select5(){
+        number = number*10 + 5
+        label.text = String(number)
+    }
+    
+    @IBAction func select6(){
+        number = number*10 + 6
+        label.text = String(number)
+    }
+    
+    @IBAction func select7(){
+        number = number*10 + 7
+        label.text = String(number)
+    }
+    
+    @IBAction func select8(){
+        number = number*10 + 8
+        label.text = String(number)
+    }
+    
+    @IBAction func select9(){
+        number = number*10 + 9
+        label.text = String(number)
+    }
+    
+    @IBAction func select0(){
+        number = number*10
         label.text = String(number)
     }
     
