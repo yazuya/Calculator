@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var number: Int = 0
     var number2: Int = 0
     var operation: Int = 0
+    var ans1: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,13 +81,20 @@ class ViewController: UIViewController {
         label.text = "0"
         
         operation = 1
-        number2 = number + number2
+        number2 = number
         number = 0
     }
     
     @IBAction func equal(){
         if operation == 1{
             label.text = String(number + number2)
+            ans1 = number + number2
+        }else if operation == 2{
+                label.text = String(number * number2)
+            }else if operation == 3{
+                    label.text = String(number2 - number)
+                }else if operation == 4{
+                        label.text = String(number2 / number)
         }
     }
     
@@ -97,7 +105,30 @@ class ViewController: UIViewController {
         label.text = "0"
         
     }
-
+    
+    @IBAction func multiplied(){
+        label.text = "0"
+        
+        operation = 2
+        number2 = number
+        number = 0
+    }
+    
+    @IBAction func minus(){
+        label.text = "0"
+        
+        operation = 3
+        number2 = number
+        number = 0
+    }
+    
+    @IBAction func division(){
+        label.text = "0"
+        
+        operation = 4
+        number2 = number
+        number = 0
+    }
 
 }
 
